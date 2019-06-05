@@ -15,13 +15,11 @@ namespace CityInfo.API.Entities
             { return; }
 
             var testPointsOfInterest = new Faker<PointOfInterest>()
-               //.RuleFor(p => p.PointId, f => f.IndexFaker)
                .RuleFor(p => p.PointName, f => f.Lorem.Word())
                .RuleFor(p => p.PointDescription, f => f.Lorem.Paragraph(1));
 
 
             var testCitiesDto = new Faker<City>()
-                //.RuleFor(c => c.CityId, f => f.IndexFaker)
                 .RuleFor(c => c.CityName, f => f.Name.FirstName())
                 .RuleFor(c => c.CityDescription, f => f.Lorem.Paragraph(1))
                 .RuleFor(c => c.PointOfInterest, f => testPointsOfInterest.Generate(3));
