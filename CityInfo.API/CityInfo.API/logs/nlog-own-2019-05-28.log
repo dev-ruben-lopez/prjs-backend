@@ -1,0 +1,8 @@
+2019-05-28 15:04:54.2050||DEBUG|CityInfo.API.Controller.PointOfInterestController|Blah !!! |url: https://localhost/api/cities/0/pointofinterest/2333|action: DeletePointOfInterest
+2019-05-28 15:04:54.2050||INFO|CityInfo.API.Controller.PointOfInterestController|Bummm!! .. I've just injected ILogger to this controller !!! |url: https://localhost/api/cities/0/pointofinterest/2333|action: DeletePointOfInterest
+2019-05-28 15:04:54.3349||INFO|CityInfo.API.Controller.PointOfInterestController|Hello, this is DeletePointOfInterest |url: https://localhost/api/cities/0/pointofinterest/2333|action: DeletePointOfInterest
+2019-05-28 15:04:54.4185||ERROR|CityInfo.API.Controller.PointOfInterestController|Point of interest not found for id 2333 |url: https://localhost/api/cities/0/pointofinterest/2333|action: DeletePointOfInterest
+2019-05-28 15:16:24.1599||DEBUG|CityInfo.API.Controller.PointOfInterestController|Blah !!! |url: https://localhost/api/cities/0/pointofinterest/2333|action: DeletePointOfInterest
+2019-05-28 15:16:24.1599||INFO|CityInfo.API.Controller.PointOfInterestController|Bummm!! .. I've just injected ILogger to this controller !!! |url: https://localhost/api/cities/0/pointofinterest/2333|action: DeletePointOfInterest
+2019-05-28 15:16:24.2873||INFO|CityInfo.API.Controller.PointOfInterestController|Hello, this is DeletePointOfInterest |url: https://localhost/api/cities/0/pointofinterest/2333|action: DeletePointOfInterest
+2019-05-28 15:16:24.3673||ERROR|CityInfo.API.Controller.PointOfInterestController|Point of interest not found for id 2333 |url: https://localhost/api/cities/0/pointofinterest/2333|action: DeletePointOfInterest

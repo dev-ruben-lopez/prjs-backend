@@ -1,0 +1,66 @@
+2019-06-05 08:24:28.6471||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\rlopezmachad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-06-05 08:24:30.6033|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'CityDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-05 08:24:31.6967|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (292ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2019-06-05 08:24:32.1623|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (44ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [City] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2019-06-05 08:24:36.5879|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (171ms) [Parameters=[@p0='?' (Size = 500), @p1='?' (Size = 50), @p2='?' (Size = 500), @p3='?' (Size = 50), @p4='?' (Size = 500), @p5='?' (Size = 50), @p6='?' (Size = 500), @p7='?' (Size = 50), @p8='?' (Size = 500), @p9='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([CityId] int, [_Position] [int]);
+MERGE [City] USING (
+VALUES (@p0, @p1, 0),
+(@p2, @p3, 1),
+(@p4, @p5, 2),
+(@p6, @p7, 3),
+(@p8, @p9, 4)) AS i ([CityDescription], [CityName], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([CityDescription], [CityName])
+VALUES (i.[CityDescription], i.[CityName])
+OUTPUT INSERTED.[CityId], i._Position
+INTO @inserted0;
+
+SELECT [t].[CityId] FROM [City] t
+INNER JOIN @inserted0 i ON ([t].[CityId] = [i].[CityId])
+ORDER BY [i].[_Position]; 
+2019-06-05 08:24:36.6500|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[@p10='?' (DbType = Int32), @p11='?' (Size = 500), @p12='?' (Size = 50), @p13='?' (Size = 500), @p14='?' (DbType = Int32), @p15='?' (Size = 500), @p16='?' (Size = 50), @p17='?' (Size = 500), @p18='?' (DbType = Int32), @p19='?' (Size = 500), @p20='?' (Size = 50), @p21='?' (Size = 500), @p22='?' (DbType = Int32), @p23='?' (Size = 500), @p24='?' (Size = 50), @p25='?' (Size = 500), @p26='?' (DbType = Int32), @p27='?' (Size = 500), @p28='?' (Size = 50), @p29='?' (Size = 500), @p30='?' (DbType = Int32), @p31='?' (Size = 500), @p32='?' (Size = 50), @p33='?' (Size = 500), @p34='?' (DbType = Int32), @p35='?' (Size = 500), @p36='?' (Size = 50), @p37='?' (Size = 500), @p38='?' (DbType = Int32), @p39='?' (Size = 500), @p40='?' (Size = 50), @p41='?' (Size = 500), @p42='?' (DbType = Int32), @p43='?' (Size = 500), @p44='?' (Size = 50), @p45='?' (Size = 500), @p46='?' (DbType = Int32), @p47='?' (Size = 500), @p48='?' (Size = 50), @p49='?' (Size = 500), @p50='?' (DbType = Int32), @p51='?' (Size = 500), @p52='?' (Size = 50), @p53='?' (Size = 500), @p54='?' (DbType = Int32), @p55='?' (Size = 500), @p56='?' (Size = 50), @p57='?' (Size = 500), @p58='?' (DbType = Int32), @p59='?' (Size = 500), @p60='?' (Size = 50), @p61='?' (Size = 500), @p62='?' (DbType = Int32), @p63='?' (Size = 500), @p64='?' (Size = 50), @p65='?' (Size = 500), @p66='?' (DbType = Int32), @p67='?' (Size = 500), @p68='?' (Size = 50), @p69='?' (Size = 500)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([PointId] int, [_Position] [int]);
+MERGE [PointOfInterest] USING (
+VALUES (@p10, @p11, @p12, @p13, 0),
+(@p14, @p15, @p16, @p17, 1),
+(@p18, @p19, @p20, @p21, 2),
+(@p22, @p23, @p24, @p25, 3),
+(@p26, @p27, @p28, @p29, 4),
+(@p30, @p31, @p32, @p33, 5),
+(@p34, @p35, @p36, @p37, 6),
+(@p38, @p39, @p40, @p41, 7),
+(@p42, @p43, @p44, @p45, 8),
+(@p46, @p47, @p48, @p49, 9),
+(@p50, @p51, @p52, @p53, 10),
+(@p54, @p55, @p56, @p57, 11),
+(@p58, @p59, @p60, @p61, 12),
+(@p62, @p63, @p64, @p65, 13),
+(@p66, @p67, @p68, @p69, 14)) AS i ([CityId], [PointDescription], [PointName], [PointWikipediaLink], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([CityId], [PointDescription], [PointName], [PointWikipediaLink])
+VALUES (i.[CityId], i.[PointDescription], i.[PointName], i.[PointWikipediaLink])
+OUTPUT INSERTED.[PointId], i._Position
+INTO @inserted0;
+
+SELECT [t].[PointId] FROM [PointOfInterest] t
+INNER JOIN @inserted0 i ON ([t].[PointId] = [i].[PointId])
+ORDER BY [i].[_Position]; 
+2019-06-05 08:24:39.6323|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:58742/  0 
+2019-06-05 08:24:39.6815|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 48.1301ms 200  
+2019-06-05 08:26:04.5724|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44387/api/cities/0/   
+2019-06-05 08:26:05.2982|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCities", controller = "Cities"}. Executing action CityInfo.API.Controller.CitiesController.GetCities (CityInfo.API) 
+2019-06-05 08:26:05.4311|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controller.CitiesController.GetCities (CityInfo.API) with arguments (0) - Validation state: Valid 
+2019-06-05 08:26:05.5640|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controller.CitiesController.GetCities (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 127.2576ms. 
+2019-06-05 08:26:05.5783|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.JsonResult'. 
+2019-06-05 08:26:05.9892|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controller.CitiesController.GetCities (CityInfo.API) in 685.7216ms 
+2019-06-05 08:26:05.9984|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1426.0537ms 200 application/json; charset=utf-8 
