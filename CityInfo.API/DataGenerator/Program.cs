@@ -8,7 +8,7 @@ namespace DataGenerator
 {
     class Program
     {
-        
+        /// This example just create the json file, but it does not save to persistent storage platform.
         static void Main(string[] args)
         {
 
