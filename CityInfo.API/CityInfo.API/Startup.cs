@@ -15,6 +15,7 @@ using NLog.Extensions.Logging;
 using NLog.Web;
 using CityInfo.API.Entities;
 using Microsoft.EntityFrameworkCore;
+using CityInfo.API.DataRepository;
 
 namespace CityInfo.API
 {
@@ -56,7 +57,7 @@ namespace CityInfo.API
             services.AddTransient<IMailService, CloudMailService>();
 #endif
 
-            
+            services.AddScoped<ICityInfoRepository, CityInfoRepository>(); //Scopped because is data access.
 
 
         }

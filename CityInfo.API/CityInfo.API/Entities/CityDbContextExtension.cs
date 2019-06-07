@@ -21,8 +21,8 @@ namespace CityInfo.API.Entities
 
             var testCitiesDto = new Faker<City>()
                 .RuleFor(c => c.CityName, f => f.Name.FirstName())
-                .RuleFor(c => c.CityDescription, f => f.Lorem.Paragraph(1))
-                .RuleFor(c => c.PointOfInterest, f => testPointsOfInterest.Generate(3));
+                .RuleFor(c => c.CityDescription, f => f.Lorem.Paragraph(1));
+                //.RuleFor(c => c.PointOfInterest, f => testPointsOfInterest.Generate(3));
 
             context.AddRange(testCitiesDto.Generate(5));
             context.SaveChanges();
