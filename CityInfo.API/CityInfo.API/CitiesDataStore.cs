@@ -7,8 +7,12 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace CityInfo.API
 {
+    /// <summary>
+    /// NOT REQUIRED AFTER REPOSITORY PATTERN
+    /// </summary>
     public class CitiesDataStore
     {
         public static CitiesDataStore Current { get; } = new CitiesDataStore();

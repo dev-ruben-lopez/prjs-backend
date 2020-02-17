@@ -1,0 +1,6 @@
+C:\src\git\per\prjs-backend\Infrastructure\VaultAPIDemo\GiveMeAllNETFrmInstalled\GiveMeAllNETFrmInstalled\bin\Debug\GiveMeAllNETFrmInstalled.exe.config
+C:\src\git\per\prjs-backend\Infrastructure\VaultAPIDemo\GiveMeAllNETFrmInstalled\GiveMeAllNETFrmInstalled\bin\Debug\GiveMeAllNETFrmInstalled.exe
+C:\src\git\per\prjs-backend\Infrastructure\VaultAPIDemo\GiveMeAllNETFrmInstalled\GiveMeAllNETFrmInstalled\bin\Debug\GiveMeAllNETFrmInstalled.pdb
+C:\src\git\per\prjs-backend\Infrastructure\VaultAPIDemo\GiveMeAllNETFrmInstalled\GiveMeAllNETFrmInstalled\obj\Debug\GiveMeAllNETFrmInstalled.csproj.CoreCompileInputs.cache
+C:\src\git\per\prjs-backend\Infrastructure\VaultAPIDemo\GiveMeAllNETFrmInstalled\GiveMeAllNETFrmInstalled\obj\Debug\GiveMeAllNETFrmInstalled.exe
+C:\src\git\per\prjs-backend\Infrastructure\VaultAPIDemo\GiveMeAllNETFrmInstalled\GiveMeAllNETFrmInstalled\obj\Debug\GiveMeAllNETFrmInstalled.pdb

@@ -1,0 +1,143 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\src\\git\\per\\prjs-backend\\Infrastructure\\VaultAPIDemo\\VaultAPIDemo\\NTestVaultAPI\\NTestVaultAPI.csproj": {}
+  },
+  "projects": {
+    "C:\\src\\git\\per\\prjs-backend\\Infrastructure\\VaultAPIDemo\\VaultAPIDemo\\NTestVaultAPI\\NTestVaultAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\src\\git\\per\\prjs-backend\\Infrastructure\\VaultAPIDemo\\VaultAPIDemo\\NTestVaultAPI\\NTestVaultAPI.csproj",
+        "projectName": "NTestVaultAPI",
+        "projectPath": "C:\\src\\git\\per\\prjs-backend\\Infrastructure\\VaultAPIDemo\\VaultAPIDemo\\NTestVaultAPI\\NTestVaultAPI.csproj",
+        "packagesPath": "C:\\Users\\rlopezmachad\\.nuget\\packages\\",
+        "outputPath": "C:\\src\\git\\per\\prjs-backend\\Infrastructure\\VaultAPIDemo\\VaultAPIDemo\\NTestVaultAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rlopezmachad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\src\\git\\per\\prjs-backend\\Infrastructure\\VaultAPIDemo\\VaultAPIDemo\\VaultAPIDemo\\VaultAPIDemo.csproj": {
+                "projectPath": "C:\\src\\git\\per\\prjs-backend\\Infrastructure\\VaultAPIDemo\\VaultAPIDemo\\VaultAPIDemo\\VaultAPIDemo.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.8.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.10.0, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.10.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\src\\git\\per\\prjs-backend\\Infrastructure\\VaultAPIDemo\\VaultAPIDemo\\VaultAPIDemo\\VaultAPIDemo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\src\\git\\per\\prjs-backend\\Infrastructure\\VaultAPIDemo\\VaultAPIDemo\\VaultAPIDemo\\VaultAPIDemo.csproj",
+        "projectName": "VaultAPIDemo",
+        "projectPath": "C:\\src\\git\\per\\prjs-backend\\Infrastructure\\VaultAPIDemo\\VaultAPIDemo\\VaultAPIDemo\\VaultAPIDemo.csproj",
+        "packagesPath": "C:\\Users\\rlopezmachad\\.nuget\\packages\\",
+        "outputPath": "C:\\src\\git\\per\\prjs-backend\\Infrastructure\\VaultAPIDemo\\VaultAPIDemo\\VaultAPIDemo\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rlopezmachad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Vault": {
+              "target": "Package",
+              "version": "[0.9.1.3, )"
+            },
+            "VaultSharp": {
+              "target": "Package",
+              "version": "[0.11.1002, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

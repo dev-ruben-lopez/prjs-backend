@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VaultAPIDemo", "VaultAPIDemo\VaultAPIDemo.csproj", "{E1A731A5-4E65-4CFA-9F18-B47229A60FFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTestVaultAPI", "NTestVaultAPI\NTestVaultAPI.csproj", "{DA0678B3-10BE-4151-A98F-5C197D84BB3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1A731A5-4E65-4CFA-9F18-B47229A60FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1A731A5-4E65-4CFA-9F18-B47229A60FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1A731A5-4E65-4CFA-9F18-B47229A60FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1A731A5-4E65-4CFA-9F18-B47229A60FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA0678B3-10BE-4151-A98F-5C197D84BB3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA0678B3-10BE-4151-A98F-5C197D84BB3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA0678B3-10BE-4151-A98F-5C197D84BB3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA0678B3-10BE-4151-A98F-5C197D84BB3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3611FD2-2C6A-4995-9ECE-668A84654ABB}
+	EndGlobalSection
+EndGlobal

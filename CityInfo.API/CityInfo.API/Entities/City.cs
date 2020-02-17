@@ -22,7 +22,7 @@ namespace CityInfo.API.Entities
 
 
         //just for unit test , allow to create data using Fakers (one to many navigation)
-        public IEnumerable<PointOfInterest> PointOfInterest { get; set; }
+        //public IEnumerable<PointOfInterest> PointOfInterest { get; set; }
 
     }
 }

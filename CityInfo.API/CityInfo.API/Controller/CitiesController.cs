@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CityInfo.API.DataRepository;
 
 namespace CityInfo.API.Controller
 {
@@ -11,21 +12,31 @@ namespace CityInfo.API.Controller
     public class CitiesController : ControllerBase
     {
 
+        private ICityInfoRepository _cityInfo;
+
+        public CitiesController(ICityInfoRepository cityInfo)
+        {
+            _cityInfo = cityInfo;
+        }
+
+
         [HttpGet()]
         public IActionResult GetCities()
         {
-            return Ok(new JsonResult(CitiesDataStore.Current.Cities));
+            return Ok(new JsonResult(_cityInfo.GetCities()));
         }
 
         [HttpGet("{id}")]
         public IActionResult GetCities(int id)
         {
-            var city = new JsonResult(CitiesDataStore.Current.Cities.Where(c => c.Id.Equals(id)).First());
+            var city = new JsonResult(_cityInfo.GetCity(id));
             if (city == null)
                 return NotFound();
             else
                 return Ok(city);
         }
+
+
             
 
     }
