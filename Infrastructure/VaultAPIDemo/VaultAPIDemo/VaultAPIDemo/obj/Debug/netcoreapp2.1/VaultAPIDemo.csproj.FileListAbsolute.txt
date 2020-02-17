@@ -1,0 +1,9 @@
+C:\src\git\per\prjs-backend\Infrastructure\VaultAPIDemo\VaultAPIDemo\VaultAPIDemo\bin\Debug\netcoreapp2.1\VaultAPIDemo.deps.json
+C:\src\git\per\prjs-backend\Infrastructure\VaultAPIDemo\VaultAPIDemo\VaultAPIDemo\bin\Debug\netcoreapp2.1\VaultAPIDemo.dll
+C:\src\git\per\prjs-backend\Infrastructure\VaultAPIDemo\VaultAPIDemo\VaultAPIDemo\obj\Debug\netcoreapp2.1\VaultAPIDemo.csprojAssemblyReference.cache
+C:\src\git\per\prjs-backend\Infrastructure\VaultAPIDemo\VaultAPIDemo\VaultAPIDemo\obj\Debug\netcoreapp2.1\VaultAPIDemo.csproj.CoreCompileInputs.cache
+C:\src\git\per\prjs-backend\Infrastructure\VaultAPIDemo\VaultAPIDemo\VaultAPIDemo\obj\Debug\netcoreapp2.1\VaultAPIDemo.AssemblyInfoInputs.cache
+C:\src\git\per\prjs-backend\Infrastructure\VaultAPIDemo\VaultAPIDemo\VaultAPIDemo\obj\Debug\netcoreapp2.1\VaultAPIDemo.AssemblyInfo.cs
+C:\src\git\per\prjs-backend\Infrastructure\VaultAPIDemo\VaultAPIDemo\VaultAPIDemo\bin\Debug\netcoreapp2.1\VaultAPIDemo.pdb
+C:\src\git\per\prjs-backend\Infrastructure\VaultAPIDemo\VaultAPIDemo\VaultAPIDemo\obj\Debug\netcoreapp2.1\VaultAPIDemo.dll
+C:\src\git\per\prjs-backend\Infrastructure\VaultAPIDemo\VaultAPIDemo\VaultAPIDemo\obj\Debug\netcoreapp2.1\VaultAPIDemo.pdb

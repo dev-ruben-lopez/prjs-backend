@@ -1,0 +1,230 @@
+2019-06-07 09:25:09.1592||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\rlopezmachad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-06-07 09:25:10.9342|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'CityDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-07 09:25:12.7337|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1,307ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2019-06-07 09:25:13.2461|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (141ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [City] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2019-06-07 09:25:14.1258|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:58742/  0 
+2019-06-07 09:25:14.2153|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 87.9166ms 200  
+2019-06-07 09:25:22.2430|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44387/api/cities/0/pointofinterest/0   
+2019-06-07 09:25:22.6427|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPointOfInterest", controller = "PointOfInterest"}. Executing action CityInfo.API.Controller.PointOfInterestController.GetPointOfInterest (CityInfo.API) 
+2019-06-07 09:25:22.6658|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'CityDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-07 09:25:23.3400|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (654ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2019-06-07 09:25:23.3400||DEBUG|CityInfo.API.Controller.PointOfInterestController|Blah !!! 
+2019-06-07 09:25:23.3535||INFO|CityInfo.API.Controller.PointOfInterestController|Bummm!! .. I've just injected ILogger to this controller !!! 
+2019-06-07 09:25:23.4375|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controller.PointOfInterestController.GetPointOfInterest (CityInfo.API) with arguments (0, 0) - Validation state: Valid 
+2019-06-07 09:25:23.6953|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (107ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CityId], [c].[CityDescription], [c].[CityName]
+FROM [City] AS [c]
+WHERE [c].[CityId] = @__cityId_0 
+2019-06-07 09:25:23.6953|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controller.PointOfInterestController.GetPointOfInterest (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 263.087ms. 
+2019-06-07 09:25:23.7140|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'. 
+2019-06-07 09:25:23.7140|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointOfInterestController.GetPointOfInterest (CityInfo.API) in 1064.3418ms 
+2019-06-07 09:25:23.7290|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1486.0025ms 404 text/plain; charset=utf-8 
+2019-06-07 09:25:35.6283|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44387/api/cities/7/pointofinterest/0   
+2019-06-07 09:25:35.6308|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPointOfInterest", controller = "PointOfInterest"}. Executing action CityInfo.API.Controller.PointOfInterestController.GetPointOfInterest (CityInfo.API) 
+2019-06-07 09:25:35.6308|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'CityDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-07 09:25:35.6924|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (55ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2019-06-07 09:25:35.6924||DEBUG|CityInfo.API.Controller.PointOfInterestController|Blah !!! 
+2019-06-07 09:25:35.6924||INFO|CityInfo.API.Controller.PointOfInterestController|Bummm!! .. I've just injected ILogger to this controller !!! 
+2019-06-07 09:25:35.7217|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controller.PointOfInterestController.GetPointOfInterest (CityInfo.API) with arguments (7, 0) - Validation state: Valid 
+2019-06-07 09:25:35.7588|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (28ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CityId], [c].[CityDescription], [c].[CityName]
+FROM [City] AS [c]
+WHERE [c].[CityId] = @__cityId_0 
+2019-06-07 09:25:35.8660|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (35ms) [Parameters=[@__pointId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[PointId], [p].[CityId], [p].[PointDescription], [p].[PointName], [p].[PointWikipediaLink]
+FROM [PointOfInterest] AS [p]
+WHERE [p].[PointId] = @__pointId_0 
+2019-06-07 09:25:35.8660|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controller.PointOfInterestController.GetPointOfInterest (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 147.4443ms. 
+2019-06-07 09:25:35.8660|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'. 
+2019-06-07 09:25:35.8660|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointOfInterestController.GetPointOfInterest (CityInfo.API) in 241.2282ms 
+2019-06-07 09:25:35.8660|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 246.9821ms 404 text/plain; charset=utf-8 
+2019-06-07 09:26:17.8479|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44387/api/cities/7/pointofinterest/7   
+2019-06-07 09:26:17.8479|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPointOfInterest", controller = "PointOfInterest"}. Executing action CityInfo.API.Controller.PointOfInterestController.GetPointOfInterest (CityInfo.API) 
+2019-06-07 09:26:17.8479|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'CityDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-07 09:26:18.1513|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (287ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2019-06-07 09:26:18.1513||DEBUG|CityInfo.API.Controller.PointOfInterestController|Blah !!! 
+2019-06-07 09:26:18.1650||INFO|CityInfo.API.Controller.PointOfInterestController|Bummm!! .. I've just injected ILogger to this controller !!! 
+2019-06-07 09:26:18.1860|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controller.PointOfInterestController.GetPointOfInterest (CityInfo.API) with arguments (7, 7) - Validation state: Valid 
+2019-06-07 09:26:18.2137|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (25ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CityId], [c].[CityDescription], [c].[CityName]
+FROM [City] AS [c]
+WHERE [c].[CityId] = @__cityId_0 
+2019-06-07 09:26:18.2552|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (39ms) [Parameters=[@__pointId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[PointId], [p].[CityId], [p].[PointDescription], [p].[PointName], [p].[PointWikipediaLink]
+FROM [PointOfInterest] AS [p]
+WHERE [p].[PointId] = @__pointId_0 
+2019-06-07 09:26:18.2929|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controller.PointOfInterestController.GetPointOfInterest (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 105.2388ms. 
+2019-06-07 09:26:18.2929|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Entities.PointOfInterest'. 
+2019-06-07 09:26:18.3630|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointOfInterestController.GetPointOfInterest (CityInfo.API) in 500.9728ms 
+2019-06-07 09:26:18.3630|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Newtonsoft.Json.JsonSerializationException: Self referencing loop detected with type 'CityInfo.API.Entities.PointOfInterest'. Path 'city.pointOfInterest'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteObject(TextWriter writer, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-07 09:26:18.5039|2|WARN|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|The response has already started, the error page middleware will not be executed. 
+2019-06-07 09:26:18.5039|13|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLNAR9LH1T6F", Request id "0HLNAR9LH1T6F:00000004": An unhandled exception was thrown by the application. Newtonsoft.Json.JsonSerializationException: Self referencing loop detected with type 'CityInfo.API.Entities.PointOfInterest'. Path 'city.pointOfInterest'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteObject(TextWriter writer, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-06-07 09:26:18.5039|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 670.2314ms 200 application/json; charset=utf-8 
+2019-06-07 09:26:45.9014|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44387/api/cities/7/pointofinterest/7   
+2019-06-07 09:26:45.9183|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPointOfInterest", controller = "PointOfInterest"}. Executing action CityInfo.API.Controller.PointOfInterestController.GetPointOfInterest (CityInfo.API) 
+2019-06-07 09:26:45.9317|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'CityDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-07 09:26:46.2471|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (314ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2019-06-07 09:26:46.2471||DEBUG|CityInfo.API.Controller.PointOfInterestController|Blah !!! 
+2019-06-07 09:26:46.2471||INFO|CityInfo.API.Controller.PointOfInterestController|Bummm!! .. I've just injected ILogger to this controller !!! 
+2019-06-07 09:26:46.2714|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controller.PointOfInterestController.GetPointOfInterest (CityInfo.API) with arguments (7, 7) - Validation state: Valid 
+2019-06-07 09:26:49.0499|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (76ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CityId], [c].[CityDescription], [c].[CityName]
+FROM [City] AS [c]
+WHERE [c].[CityId] = @__cityId_0 
+2019-06-07 09:26:51.1630|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (106ms) [Parameters=[@__pointId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[PointId], [p].[CityId], [p].[PointDescription], [p].[PointName], [p].[PointWikipediaLink]
+FROM [PointOfInterest] AS [p]
+WHERE [p].[PointId] = @__pointId_0 
+2019-06-07 09:27:02.5046|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controller.PointOfInterestController.GetPointOfInterest (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16231.4326ms. 
+2019-06-07 09:27:02.5046|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Entities.PointOfInterest'. 
+2019-06-07 09:27:22.4955|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointOfInterestController.GetPointOfInterest (CityInfo.API) in 36574.3772ms 
+2019-06-07 09:27:22.5036|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Newtonsoft.Json.JsonSerializationException: Self referencing loop detected with type 'CityInfo.API.Entities.PointOfInterest'. Path 'city.pointOfInterest'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteObject(TextWriter writer, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-07 09:27:22.5192|2|WARN|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|The response has already started, the error page middleware will not be executed. 
+2019-06-07 09:27:22.5385|13|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLNAR9LH1T6G", Request id "0HLNAR9LH1T6G:00000001": An unhandled exception was thrown by the application. Newtonsoft.Json.JsonSerializationException: Self referencing loop detected with type 'CityInfo.API.Entities.PointOfInterest'. Path 'city.pointOfInterest'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteObject(TextWriter writer, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-06-07 09:27:22.5385|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 36644.3847ms 200 application/json; charset=utf-8 
+2019-06-07 09:28:12.1543||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\rlopezmachad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-06-07 09:28:13.3142|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'CityDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-07 09:28:13.6621|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (83ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2019-06-07 09:28:13.9860|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (27ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [City] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2019-06-07 09:28:14.6216|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:58742/  0 
+2019-06-07 09:28:14.6728|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 49.7542ms 200  
+2019-06-07 09:30:03.9812|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44387/api/cities/7/pointofinterest/7   
+2019-06-07 09:30:04.2835|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPointOfInterest", controller = "PointOfInterest"}. Executing action CityInfo.API.Controller.PointOfInterestController.GetPointOfInterest (CityInfo.API) 
+2019-06-07 09:30:04.2999|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'CityDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-07 09:30:04.3810|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (70ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2019-06-07 09:30:04.3810||DEBUG|CityInfo.API.Controller.PointOfInterestController|Blah !!! 
+2019-06-07 09:30:04.3946||INFO|CityInfo.API.Controller.PointOfInterestController|Bummm!! .. I've just injected ILogger to this controller !!! 
+2019-06-07 09:30:04.4863|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controller.PointOfInterestController.GetPointOfInterest (CityInfo.API) with arguments (7, 7) - Validation state: Valid 
+2019-06-07 09:30:06.7138|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (29ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CityId], [c].[CityDescription], [c].[CityName]
+FROM [City] AS [c]
+WHERE [c].[CityId] = @__cityId_0 
+2019-06-07 09:30:06.8564|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (26ms) [Parameters=[@__pointId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[PointId], [p].[CityId], [p].[PointDescription], [p].[PointName], [p].[PointWikipediaLink]
+FROM [PointOfInterest] AS [p]
+WHERE [p].[PointId] = @__pointId_0 
+2019-06-07 09:30:06.8869|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controller.PointOfInterestController.GetPointOfInterest (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2397.0466ms. 
+2019-06-07 09:30:06.8971|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Entities.PointOfInterest'. 
+2019-06-07 09:30:06.9783|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointOfInterestController.GetPointOfInterest (CityInfo.API) in 2690.6144ms 
+2019-06-07 09:30:06.9783|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3003.1895ms 200 application/json; charset=utf-8 

@@ -1,0 +1,8 @@
+C:\src\git\per\prjs-backend\Infrastructure\AzureVMCreator\AzureVMCreator\AzureVMCreator\bin\Debug\netcoreapp2.1\AzureVMCreator.deps.json
+C:\src\git\per\prjs-backend\Infrastructure\AzureVMCreator\AzureVMCreator\AzureVMCreator\bin\Debug\netcoreapp2.1\AzureVMCreator.runtimeconfig.json
+C:\src\git\per\prjs-backend\Infrastructure\AzureVMCreator\AzureVMCreator\AzureVMCreator\bin\Debug\netcoreapp2.1\AzureVMCreator.runtimeconfig.dev.json
+C:\src\git\per\prjs-backend\Infrastructure\AzureVMCreator\AzureVMCreator\AzureVMCreator\bin\Debug\netcoreapp2.1\AzureVMCreator.dll
+C:\src\git\per\prjs-backend\Infrastructure\AzureVMCreator\AzureVMCreator\AzureVMCreator\obj\Debug\netcoreapp2.1\AzureVMCreator.csprojAssemblyReference.cache
+C:\src\git\per\prjs-backend\Infrastructure\AzureVMCreator\AzureVMCreator\AzureVMCreator\obj\Debug\netcoreapp2.1\AzureVMCreator.csproj.CoreCompileInputs.cache
+C:\src\git\per\prjs-backend\Infrastructure\AzureVMCreator\AzureVMCreator\AzureVMCreator\obj\Debug\netcoreapp2.1\AzureVMCreator.AssemblyInfoInputs.cache
+C:\src\git\per\prjs-backend\Infrastructure\AzureVMCreator\AzureVMCreator\AzureVMCreator\obj\Debug\netcoreapp2.1\AzureVMCreator.AssemblyInfo.cs
