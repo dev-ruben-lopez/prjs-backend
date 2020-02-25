@@ -3,12 +3,16 @@
 
 def bubbleOrderList(l):
     swp = True
-    while swp:
-        swp = False
-        for i in range(len(l)):
-            if ( ( i+1 < len(l))  and (l[i]  > l[i+1])):
-                l[i], l[i+1] = l[i+1], l[i] 
-                swp = True
+    try:
+        while swp:
+            swp = False
+            for i in range(len(l)):
+                if ( ( i+1 < len(l))  and (l[i]  > l[i+1])):
+                    l[i], l[i+1] = l[i+1], l[i] 
+                    swp = True
+    except:
+        print("Error. Please try again." + err)
+    
     return l
 
 
