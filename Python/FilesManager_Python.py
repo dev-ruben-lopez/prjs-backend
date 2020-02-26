@@ -14,12 +14,6 @@ import logging
 
 """ Setting Up Logging Funcionality """
 logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger(__name__)
-f_handler = logging.FileHandler(logFilePath)
-f_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-f_handler.setFormatter(f_format)
-logger.addHandler(f_handler)
-logger.level = logging.INFO
 
 
 """ Read Configuration"""
@@ -30,7 +24,7 @@ for c in config:
     originalFolder = c["OriginalFolder"]
     destinationFolder = c["DestinationFolder"]
     if(not originalFolder or not destinationFolder):
-        logger.error("Please setup the Settings File and fill the path of the directories (origin/destination)")
+        logging.error("Please setup the Settings File and fill the path of the directories (origin/destination)")
         break
     createSubDirsWithExtension = c["CreateSubDirsWithExtension"] == "True"
     groupInstallersZipRar = c["GroupInstallersZipRar"] == "True"
@@ -39,25 +33,13 @@ for c in config:
     logFilePath = c["LogFilePath"]
 
 
-""" MAIN """
-logger.info("Starting monitoring on : " + originalFolder)
-logger.info("Destination folder : " + destinationFolder)
-
-eventHandler = fileSystemEventHandler()
-observer = Observer()
-
-observer.schedule(eventHandler, originalFolder, recursive=True)
-
-observer.start()
-
-try:
-    while True:
-        time.sleep(10)
-except KeyboardInterrupt:
-    observer.stop()
-observer.join()
-
-
+""" Setting Up Logging Funcionality """
+logger = logging.getLogger(__name__)
+f_handler = logging.FileHandler(logFilePath)
+f_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+f_handler.setFormatter(f_format)
+logger.addHandler(f_handler)
+logger.level = logging.INFO
 
 
 class fileSystemEventHandler(FileSystemEventHandler):
@@ -94,3 +76,22 @@ def CreateDirectory(pathToDir, dirName):
         os.makedirs(os.path.join(pathToDir,dirName))
     
     return
+
+
+""" MAIN """
+logger.info("Starting monitoring on : " + originalFolder)
+logger.info("Destination folder : " + destinationFolder)
+
+eventHandler = fileSystemEventHandler()
+observer = Observer()
+
+observer.schedule(eventHandler, originalFolder, recursive=True)
+
+observer.start()
+
+try:
+    while True:
+        time.sleep(10)
+except KeyboardInterrupt:
+    observer.stop()
+observer.join()
