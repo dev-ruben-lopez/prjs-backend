@@ -33,12 +33,8 @@ def ConvertUniversalPathSlashes(path):
 
 
 
-
-
-
-
 version = "FileMan Version 1.0, Feb 2020" 
-logFilePath = os.path.join(sys.path[0],"FileManLogFile.log")
+logFilePath = os.path.join(sys.path[0],"xfiles/FileManLogFile.log")
 
 """ Setting Up Logging Funcionality """
 logging.basicConfig(level=logging.DEBUG)
@@ -52,7 +48,7 @@ logger.level = logging.DEBUG
 try:
     """ Read Configuration"""
 
-    with open( os.path.join(sys.path[0],'FilesManager_Settings.json'), 'r') as cfg:
+    with open( os.path.join(sys.path[0],'xfiles/FilesManager_Settings.json'), 'r') as cfg:
         config = json.load(cfg)
     for c in config:
         originalFolder = ConvertUniversalPathSlashes(c["OriginalFolder"])
