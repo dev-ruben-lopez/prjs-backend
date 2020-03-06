@@ -1,0 +1,83 @@
+2020-02-28 14:09:52,277 - INFO - *******************************************************************************************
+2020-02-28 14:09:52,665 - INFO - FileMan Version 1.0, Feb 2020
+2020-02-28 14:09:52,873 - INFO - Starting monitoring on : c:/temp/
+2020-02-28 14:09:53,115 - INFO - Destination folder : c:/temp/destination
+2020-02-28 14:14:17,512 - INFO - Moving file c:/temp/ApplicationConfiguration.xml to c:/temp/destination\xml\ApplicationConfiguration.xml
+2020-02-28 14:14:17,516 - INFO - Moving file c:/temp/ApplicationConfiguration.xml.bak to c:/temp/destination\bak\ApplicationConfiguration.xml.bak
+2020-02-28 14:14:17,520 - INFO - Moving file c:/temp/AU5CG9122RRN-Information-10-07-2019-1212.txt to c:/temp/destination\txt\AU5CG9122RRN-Information-10-07-2019-1212.txt
+2020-02-28 14:14:17,522 - INFO - Moving file c:/temp/AU5CG9122RRN-Information-10-07-2019-1214.txt to c:/temp/destination\txt\AU5CG9122RRN-Information-10-07-2019-1214.txt
+2020-02-28 14:14:17,525 - INFO - Moving file c:/temp/AU5CG9122RRN-Information-16-07-2019-0926.txt to c:/temp/destination\txt\AU5CG9122RRN-Information-16-07-2019-0926.txt
+2020-02-28 14:14:17,528 - INFO - Moving file c:/temp/Bundle to c:/temp/destination\Bundle
+2020-02-28 14:14:17,531 - INFO - Moving file c:/temp/dest to c:/temp/destination\dest
+2020-02-28 14:14:17,535 - INFO - Moving file c:/temp/destination to c:/temp/destination\destination
+2020-02-28 14:14:17,536 - ERROR - File Permission Error. Details : The process cannot access the file because it is being used by another process
+2020-02-28 14:14:17,540 - INFO - Moving file c:/temp/Encoding Time.csv to c:/temp/destination\csv\Encoding Time.csv
+2020-02-28 14:14:17,544 - INFO - Moving file c:/temp/InstalledPrograms-PS.txt to c:/temp/destination\txt\InstalledPrograms-PS.txt
+2020-02-28 14:14:17,548 - INFO - Moving file c:/temp/internal-nlog.txt to c:/temp/destination\txt\internal-nlog.txt
+2020-02-28 14:14:17,554 - INFO - Moving file c:/temp/KeyFile.key to c:/temp/destination\key\KeyFile.key
+2020-02-28 14:14:17,568 - INFO - Moving file c:/temp/MDT_LastStepsAndRepair to c:/temp/destination\MDT_LastStepsAndRepair
+2020-02-28 14:14:17,572 - INFO - Moving file c:/temp/nlog-all-2019-05-28.log to c:/temp/destination\log\nlog-all-2019-05-28.log
+2020-02-28 14:14:17,576 - INFO - Moving file c:/temp/nlog-own-2019-05-28.log to c:/temp/destination\log\nlog-own-2019-05-28.log
+2020-02-28 14:14:17,580 - INFO - Moving file c:/temp/NothingForNSeconds.ps1 to c:/temp/destination\ps1\NothingForNSeconds.ps1
+2020-02-28 14:14:17,582 - INFO - Moving file c:/temp/origin to c:/temp/destination\origin
+2020-02-28 14:14:17,585 - INFO - Moving file c:/temp/PRV_DeviceProvisioning to c:/temp/destination\PRV_DeviceProvisioning
+2020-02-28 14:14:17,596 - INFO - Moving file c:/temp/SAH-Desired-Device-LayoutConfiguration - Copy.xml to c:/temp/destination\xml\SAH-Desired-Device-LayoutConfiguration - Copy.xml
+2020-02-28 14:14:17,614 - INFO - Moving file c:/temp/SAH-Desired-Device-LayoutConfiguration.xml to c:/temp/destination\xml\SAH-Desired-Device-LayoutConfiguration.xml
+2020-02-28 14:14:17,628 - INFO - Moving file c:/temp/{AU5CG9122RRN}_Information.txt to c:/temp/destination\txt\{AU5CG9122RRN}_Information.txt
+2020-02-28 14:14:17,633 - INFO - Moving file c:/temp/destination to c:/temp/destination\destination
+2020-02-28 14:14:17,635 - ERROR - File Permission Error. Details : The process cannot access the file because it is being used by another process
+2020-02-28 15:44:35,646 - INFO - *******************************************************************************************
+2020-02-28 15:44:35,648 - INFO - FileMan Version 1.0, Feb 2020
+2020-02-28 15:44:35,649 - INFO - Starting monitoring on : c:/temp/
+2020-02-28 15:44:35,649 - INFO - Destination folder : c:/temp/destination
+2020-02-28 15:44:52,311 - INFO - Moving file c:/temp/2020-02-27 15_04_30-Meeting _ Microsoft Teams.png to c:/temp/destination\png\2020-02-27 15_04_30-Meeting _ Microsoft Teams.png
+2020-02-28 15:44:52,313 - INFO - Moving file c:/temp/destination to c:/temp/destination\destination
+2020-02-28 15:44:52,314 - ERROR - File Permission Error. Details : The process cannot access the file because it is being used by another process
+2020-02-28 15:44:52,316 - INFO - Moving file c:/temp/2020-02-27 15_04_59-Meeting _ Microsoft Teams.png to c:/temp/destination\png\2020-02-27 15_04_59-Meeting _ Microsoft Teams.png
+2020-02-28 15:44:52,319 - INFO - Moving file c:/temp/2020-02-27 15_08_59-Meeting _ Microsoft Teams.png to c:/temp/destination\png\2020-02-27 15_08_59-Meeting _ Microsoft Teams.png
+2020-02-28 15:44:52,321 - INFO - Moving file c:/temp/destination to c:/temp/destination\destination
+2020-02-28 15:44:52,322 - ERROR - File Permission Error. Details : The process cannot access the file because it is being used by another process
+2020-02-28 15:44:53,317 - INFO - Moving file c:/temp/2020-02-27 15_11_28-Meeting _ Microsoft Teams.png to c:/temp/destination\png\2020-02-27 15_11_28-Meeting _ Microsoft Teams.png
+2020-02-28 15:44:53,320 - INFO - Moving file c:/temp/2020-02-27 15_15_22-Meeting _ Microsoft Teams.png to c:/temp/destination\png\2020-02-27 15_15_22-Meeting _ Microsoft Teams.png
+2020-02-28 15:44:53,325 - INFO - Moving file c:/temp/2020-02-27 15_21_17-Meeting _ Microsoft Teams.png to c:/temp/destination\png\2020-02-27 15_21_17-Meeting _ Microsoft Teams.png
+2020-02-28 15:44:53,328 - INFO - Moving file c:/temp/2020-02-27 15_24_45-Meeting _ Microsoft Teams.png to c:/temp/destination\png\2020-02-27 15_24_45-Meeting _ Microsoft Teams.png
+2020-02-28 15:44:53,331 - INFO - Moving file c:/temp/2020-02-27 15_44_32-Meeting _ Microsoft Teams.png to c:/temp/destination\png\2020-02-27 15_44_32-Meeting _ Microsoft Teams.png
+2020-02-28 15:44:53,335 - INFO - Moving file c:/temp/2020-02-27 15_45_07-Meeting _ Microsoft Teams.png to c:/temp/destination\png\2020-02-27 15_45_07-Meeting _ Microsoft Teams.png
+2020-02-28 15:44:53,338 - INFO - Moving file c:/temp/2020-02-27 15_59_05-Meeting _ Microsoft Teams.png to c:/temp/destination\png\2020-02-27 15_59_05-Meeting _ Microsoft Teams.png
+2020-02-28 15:44:53,341 - INFO - Moving file c:/temp/destination to c:/temp/destination\destination
+2020-02-28 15:44:53,343 - ERROR - File Permission Error. Details : The process cannot access the file because it is being used by another process
+2020-02-28 15:44:53,345 - INFO - Moving file c:/temp/destination to c:/temp/destination\destination
+2020-02-28 15:44:53,347 - ERROR - File Permission Error. Details : The process cannot access the file because it is being used by another process
+2020-02-28 15:44:53,349 - INFO - Moving file c:/temp/destination to c:/temp/destination\destination
+2020-02-28 15:44:53,350 - ERROR - File Permission Error. Details : The process cannot access the file because it is being used by another process
+2020-02-28 15:44:53,352 - INFO - Moving file c:/temp/destination to c:/temp/destination\destination
+2020-02-28 15:44:53,354 - ERROR - File Permission Error. Details : The process cannot access the file because it is being used by another process
+2020-02-28 15:44:53,357 - INFO - Moving file c:/temp/destination to c:/temp/destination\destination
+2020-02-28 15:44:53,359 - ERROR - File Permission Error. Details : The process cannot access the file because it is being used by another process
+2020-02-28 15:44:53,361 - INFO - Moving file c:/temp/destination to c:/temp/destination\destination
+2020-02-28 15:44:53,362 - ERROR - File Permission Error. Details : The process cannot access the file because it is being used by another process
+2020-02-28 15:44:53,365 - INFO - Moving file c:/temp/destination to c:/temp/destination\destination
+2020-02-28 15:44:53,367 - ERROR - File Permission Error. Details : The process cannot access the file because it is being used by another process
+2020-02-28 15:44:53,369 - INFO - Moving file c:/temp/destination to c:/temp/destination\destination
+2020-02-28 15:44:53,371 - ERROR - File Permission Error. Details : The process cannot access the file because it is being used by another process
+2020-02-28 15:51:39,642 - INFO - *******************************************************************************************
+2020-02-28 15:51:39,643 - INFO - FileMan Version 1.0, Feb 2020
+2020-02-28 15:51:39,644 - INFO - Starting monitoring on : c:/temp/
+2020-02-28 15:51:39,644 - INFO - Destination folder : c:/temp/destination
+2020-02-28 15:52:13,790 - INFO - Moving file c:/temp/AirWatchLLC.VMwareWorkspaceONE to c:/temp/destination\AirWatchLLC.VMwareWorkspaceONE
+2020-02-28 15:52:13,794 - INFO - Moving file c:/temp/AirWatchLLC.VMwareWorkspaceONETWO - Copy.zip to c:/temp/destination\zip\AirWatchLLC.VMwareWorkspaceONETWO - Copy.zip
+2020-02-28 15:52:13,795 - ERROR - File Permission Error. Details : The process cannot access the file because it is being used by another process
+2020-02-28 15:52:13,796 - INFO - Moving file c:/temp/AirWatchLLC.VMwareWorkspaceONETWO.zip to c:/temp/destination\zip\AirWatchLLC.VMwareWorkspaceONETWO.zip
+2020-02-28 15:52:13,799 - INFO - Moving file c:/temp/destination to c:/temp/destination\destination
+2020-02-28 15:52:13,800 - ERROR - File Permission Error. Details : The process cannot access the file because it is being used by another process
+2020-02-28 15:52:14,798 - INFO - Moving file c:/temp/AirWatchLLC.VMwareWorkspaceONETWO - Copy.zip to c:/temp/destination\zip\AirWatchLLC.VMwareWorkspaceONETWO - Copy.zip
+2020-02-28 15:52:14,800 - INFO - Moving file c:/temp/destination to c:/temp/destination\destination
+2020-02-28 15:52:14,801 - ERROR - File Permission Error. Details : The process cannot access the file because it is being used by another process
+2020-02-28 15:52:15,801 - INFO - Moving file c:/temp/destination to c:/temp/destination\destination
+2020-02-28 15:52:15,802 - ERROR - File Permission Error. Details : The process cannot access the file because it is being used by another process
+2020-02-28 15:52:15,804 - INFO - Moving file c:/temp/destination to c:/temp/destination\destination
+2020-02-28 15:52:15,804 - ERROR - File Permission Error. Details : The process cannot access the file because it is being used by another process
+2020-02-28 15:52:15,806 - INFO - Moving file c:/temp/destination to c:/temp/destination\destination
+2020-02-28 15:52:15,806 - ERROR - File Permission Error. Details : The process cannot access the file because it is being used by another process
+2020-02-28 15:52:15,808 - INFO - Moving file c:/temp/destination to c:/temp/destination\destination
+2020-02-28 15:52:15,809 - ERROR - File Permission Error. Details : The process cannot access the file because it is being used by another process
