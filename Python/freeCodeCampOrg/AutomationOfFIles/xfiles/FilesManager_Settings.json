@@ -1,8 +1,8 @@
 [
     {
-        "OriginalFolder" : "c:\\temp\\",
-        "DestinationFolder" : "c:\\temp\\destination",
-        "CreateSubDirsWithExtension" : "True",
+        "OriginalFolder" : "c:\\uno\\",
+        "DestinationFolder" : "c:\\temp\\",
+        "CreateSubDirsWithExtension" : "False",
         "GroupInstallersZipRar" : "",
         "MoveAllImageFormatsToThisDir" : "",
         
