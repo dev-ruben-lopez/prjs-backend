@@ -1,0 +1,30 @@
+<html>
+<H1>PHP API ROUTER</H1>
+<p>
+If you dont like or cnat use FastRoute, then use me. I work with PHP 7.0, while FastRoute works with 7.1>
+
+(users.php as example)
+  
+My object returns something like this:
+  
+  object(APIRoute)[1]
+  private 'URIBaseline' => string 'regexTester.php/{username:[A-Za-z0-9]+}/permissions/{permissionid:[0-9]+}' (length=73)
+  private 'URIToValidate' => string 'regexTester.php/AZ4F4/' (length=22)
+  public 'vars' => 
+    array (size=2)
+      0 => 
+        object(VarContainer)[2]
+          public 'name' => string 'username' (length=8)
+          public 'value' => string 'AZ4F4' (length=5)
+          public 'regex' => string '[A-Za-z0-9]+' (length=12)
+          public 'result' => boolean true
+      1 => 
+        object(VarContainer)[3]
+          public 'name' => string 'permissionid' (length=12)
+          public 'value' => null
+          public 'regex' => string '[0-9]+' (length=6)
+          public 'result' => boolean false
+
+
+</p>
+</html>
